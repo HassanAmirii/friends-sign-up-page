@@ -1,0 +1,48 @@
+:root {
+  --cool-font: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  --width: 720px;
+  --background-color: #eb4034;
+  --sec-background-color: #232236;
+  --heading-color: #222;
+  --text-color: white;
+  --sec-text-color: #8d8d91;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--cool-font);
+  color: var(--text-color);
+}
+
+.sign-up-icon-div {
+  width: 100%;
+}
+
+.Friends-hero-image {
+  width: 600px;
+}
+
+.sign-up-note {
+  font-size: 1.5rem;
+}
+
+.container {
+  min-width: min(80%, 300px);
+}
+
+.form-container {
+  background-color: var(--sec-background-color);
+  color: var(--sec-text-color);
+  width: 100%;
+  height: 50vh;
+}
