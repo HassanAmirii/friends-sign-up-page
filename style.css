@@ -1,12 +1,18 @@
 :root {
-  --cool-font: "Nunito Sans", sans-serif;
-  font-size: 20px;
+  --nunito-font: "Nunito Sans", sans-serif;
+  --font-size: 20px;
   --width: 720px;
-  --background-color: #eb4034;
+  --background-color: #eb4e38;
   --sec-background-color: #232236;
   --heading-color: #222;
   --text-color: white;
   --sec-text-color: #8d8d91;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 * {
@@ -15,35 +21,84 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 20px;
 }
 
 body {
-  background-color: var(--background-color);
-  font-family: var(--cool-font);
+  font-family: var(--nunito-font);
   color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.div-container {
+  display: flex;
+}
+
+.login-img {
+  width: 40vw;
   padding: 10px;
 }
 
-.sign-up-icon-div {
-  width: 100%;
+.form-section {
+  width: 60vw;
+  padding: 10px;
+  padding-top: 70px;
+  background-color: #232236;
+  padding-left: 60px;
+  height: 100vh;
+}
+.form-section h1 {
+  margin-bottom: 70px;
 }
 
-.Friends-hero-image {
-  width: 600px;
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
 }
 
-.sign-up-note {
-  font-size: 1.5rem;
+.form-div {
+  display: flex;
+  flex-direction: column;
 }
 
-.container {
-  min-width: min(80%, 300px);
+.form-div-button {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center; /* center the button */
+  flex-direction: column;
 }
 
-.form-container {
-  background-color: var(--sec-background-color);
-  color: var(--sec-text-color);
-  width: 100%;
-  height: 50vh;
+.form-div-button button {
+  width: 40%;
+  border-radius: 10px 10px;
+  height: 45px;
+  background-color: #eb4e38;
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border: none;
+}
+
+input {
+  border-radius: 10px 10px;
+  border-style: none;
+  height: 20px;
+}
+input:focus {
+  box-shadow: 0 0 5px 2px #eb4e38;
+  border: none; /* optional */
+  outline: none;
+}
+
+input::placeholder {
+  color: gray;
+  opacity: 0.9; /* ensure full visibility */
+  text-align: center;
+  border-style: 1px solid var(--sec-background-color);
+}
+
+.--color-orange {
+  color: #eb4e38;
 }

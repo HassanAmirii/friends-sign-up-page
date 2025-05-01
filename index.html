@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/asset/icons/favicon.svg" />
     <title>sign up | Friends™</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -12,46 +12,104 @@
     />
   </head>
   <body>
-    <div class="container">
-      <!-- first child div: image and illustration + note  -->
+    <div class="div-container">
+      <!-- login illustration section -->
+      <div class="login-img">
+        <h1>Friends&trade;</h1>
 
-      <div class="sign-up-icon-div">
-        <h1>Friends ™</h1>
         <img
-          class="Friends-hero-image"
-          src="images/Online world-cuate.png"
+          src="/asset/images/Sign up-cuate.png"
           alt=""
+          width="500"
+          height="500"
         />
-        <p class="sign-up-note">Sign up today to get exciting offers..!</p>
+
+        <p class="text-bottom" style="text-align: center">
+          Sign up today to get exciting offers..!
+        </p>
       </div>
 
-      <!-- second child div: login form  -->
+      <!-- form section  -->
+      <div class="form-section">
+        <h1>Get started</h1>
+        <form class="grid-form">
+          <div class="form-div">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              placeholder="Enter your first name"
+            />
+          </div>
 
-      <div class="form-container">
-        <form action="#" method="post">
-          <label for="">FIRST NAME:</label>
-          <input type="text" required />
+          <div class="form-div">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              placeholder="Enter your last name"
+            />
+          </div>
 
-          <label for="">LAST NAME</label>
-          <input type="text" required />
+          <div class="form-div">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@domain.com"
+            />
+          </div>
 
-          <label for="">EMAIL:</label>
-          <input type="email" required />
+          <div class="form-div">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="e.g. 08012345678"
+            />
+          </div>
 
-          <label for="">PHONE NUMBER:</label>
-          <input type="number" minlength="11" maxlength="11" required />
+          <div class="form-div">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Create a password"
+            />
+          </div>
 
-          <label for="">PASSWORD</label>
-          <input type="password" minlength="8" maxlength="8" required />
+          <div class="form-div">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+              placeholder="Repeat your password"
+            />
+          </div>
 
-          <label for="">CONFIRM PASSWORD</label>
-          <input type="password" minlength="8" maxlength="8" required />
-
-          <input type="submit" value="Create Account" />
-          <p>Already have an account..? <span>log in</span></p>
+          <div class="form-div-button">
+            <button type="submit">Create Account</button>
+            <p>
+              Already have an account..?
+              <span class="--color-orange"> Log in</span>
+            </p>
+          </div>
         </form>
+
+        <!-- Full width submit button -->
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
